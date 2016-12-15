@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_theme">
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/liaotian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_page"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/shousuo" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_theme">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_homepage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/homepage_switch_button"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/home_page"
+                android:textColor="@drawable/bottom_button_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_planning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/planning_switch_button"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/planning"
+                android:textColor="@drawable/bottom_button_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/information_switch_button"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/information"
+                android:textColor="@drawable/bottom_button_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/my_switch_button"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/my"
+                android:textColor="@drawable/bottom_button_text_color" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>
